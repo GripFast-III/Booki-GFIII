@@ -1,0 +1,72 @@
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('https://fonts.google.com/specimen/Raleway');
+    src: url('Polices/Raleway/static/Raleway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (min-width: 992px)
+{
+
+.bloc_page
+{
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.section_offre
+{
+    position: absolute;
+    width: 65%;
+    height: 626px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #F2F2F2;
+    font-family: 'Raleway';
+}
+
+.titre-section h2
+{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.hébergements-photos
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #FFFF;
+    background-color: #FFFF;
+    width: 27%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.text-container
+{
+    line-height: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #FFFF;
+    border-radius: 20px;
+    background-color: #FFFF;
+    width: 27%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.section_offre a
+{
+    text-decoration: none;
+}
+
+
+
+}

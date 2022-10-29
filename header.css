@@ -1,0 +1,156 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('https://fonts.google.com/specimen/Raleway');
+    src: url('Polices/Raleway/static/Raleway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (min-width: 992px)
+{
+
+.bloc_page
+{
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+/* Header */
+
+header
+{
+    font-family: 'Raleway';
+}
+
+header nav ul
+{
+    list-style-type: none;
+    display: flex;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+header nav li
+{
+    margin-right: 15px;
+    margin-left: 110px;
+}
+
+header nav a
+{
+    text-decoration: none;
+    position: absolute;
+    font-size: 16px;   
+}
+
+.ancre
+{
+    position: absolute;
+    left: 70%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.ancre a:hover
+{
+    color: #000065fc;
+    border-top: 2px solid #0065fc;
+}
+
+#logo
+{
+    position: absolute;
+    width: 60px;
+    height: 19px;
+    left: 0px;
+    top: 0px;
+    padding-top: 30px;
+    padding-left: 15px
+}
+
+.page-title h1
+{
+    padding-left: 15px;
+    font-size: 22px;
+}
+
+.page-title p
+{
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+#searchform
+{
+    height: 25px;
+    display: flex;
+    border-radius: 15px 15px 15px 15px;
+    overflow: hidden;
+}
+  
+#searchform
+{
+    border: none;
+    font-size: 100%;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+  
+#searchform button:hover
+{
+    cursor: pointer;
+}
+
+#searchbutton
+{
+    border-radius: 0px 15px 15px 0px;
+}
+
+#searchbutton-mob
+{
+    border-radius: 0px 15px 15px 0px;
+}
+
+#searchbar
+{
+    font-size: 18px;
+}
+
+#filters-container
+{
+    width: 914px;
+    height: 40px;
+    display: flex;
+}
+
+#filters-container h2
+{
+    align-self: center;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+#filters
+{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    padding-left: 40px;
+}
+
+.title-info p
+{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 65px;
+
+}
+
+}
