@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://kit.fontawesome.com/76951b6d18.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="header.css">
         <title>booki</title>
     </head>
@@ -11,14 +12,16 @@
         <main>
             <div class="bloc_page">
                 <header>
+                    <div class="top">
                     <a href="#"><img id="logo" src="Images/logo/Booki.png" alt="Logo Booki" title="Logo Booki"></a>
                     
                     <nav id="ancre" class="ancre">
-                        <ul>
+                        <ul class="menu">
                             <li><a href="#">Hébergements</a></li>
                             <li><a href="#">Activités</a></li>
                         </ul>
                     </nav>
+                    </div>
 
                     <div class="page-title">
                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -26,11 +29,11 @@
                     </div>
                     
                     <div>
-                        <form id="searchform" action="#">
-                            <button id="locbutton" type="button"><i class="fa fa-map-marker-alt"></i></button>
-                            <input id="searchbar" type="text" value="Marseille, France" placeholder="Marseille, France" name="searchbar">
-                            <button id="searchbutton" type="submit">Rechercher</button>
-                            <button id="searchbutton-mob" type="submit"><i class="fa fa-search"></i></button>
+                        <form class="searchform" action="#">
+                            <button class="locbutton" type="button"><i class="fa fa-map-marker-alt"></i></button>
+                            <input class="searchbar" type="text" value="Marseille, France" placeholder="Marseille, France" name="searchbar">
+                            <button class="searchbutton" type="submit">Rechercher</button>
+                            <button class="searchbutton-mob" type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
 

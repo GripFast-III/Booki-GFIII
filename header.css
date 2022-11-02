@@ -1,3 +1,5 @@
+
+
 /* Définition des polices personnalisées */
 
 @font-face
@@ -9,51 +11,21 @@
     font-style: normal;
 }
 
-@media screen and (min-width: 992px)
+body
 {
-
-.bloc_page
-{
-    max-width: 1440px;
-    margin: auto;
-    padding-top: 50px;
+box-sizing: border-box;
+font-family: 'Raleway';
+width: 95%;
+margin: auto;
+padding-top: 15px;
 }
 
-/* Header */
-
-header
+.top
 {
-    font-family: 'Raleway';
-}
-
-header nav ul
-{
-    list-style-type: none;
-    display: flex;
-    text-align: justify;
-    margin-right: 20px;
-}
-
-header nav li
-{
-    margin-right: 15px;
-    margin-left: 110px;
-}
-
-header nav a
-{
-    text-decoration: none;
-    position: absolute;
-    font-size: 16px;   
-}
-
-.ancre
-{
-    position: absolute;
-    left: 70%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    vertical-align: middle;
 }
 
 .ancre a:hover
@@ -62,95 +34,93 @@ header nav a
     border-top: 2px solid #0065fc;
 }
 
+.ancre .menu
+{
+    list-style-type: none;
+    display: flex;
+}
+
+.ancre .menu li
+{
+    padding-left: 20px;
+}
+
 #logo
 {
-    position: absolute;
-    width: 60px;
-    height: 19px;
+    width: 120px;
+    height: 40px;
     left: 0px;
     top: 0px;
-    padding-top: 30px;
-    padding-left: 15px
 }
 
 .page-title h1
 {
-    padding-left: 15px;
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .page-title p
 {
-    padding-left: 15px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-#searchform
+.page-title
 {
-    height: 25px;
-    display: flex;
-    border-radius: 15px 15px 15px 15px;
-    overflow: hidden;
+    margin-bottom: 20px;
 }
-  
-#searchform
+
+.searchform
 {
     border: none;
     font-size: 100%;
-    padding-left: 25px;
     padding-top: 10px;
     padding-bottom: 20px;
 }
   
-#searchform button:hover
+.searchform button:hover
 {
     cursor: pointer;
 }
 
-#searchbutton
+.searchbutton
 {
     border-radius: 0px 15px 15px 0px;
 }
 
-#searchbutton-mob
+.searchbutton-mob
 {
+    display: none;
     border-radius: 0px 15px 15px 0px;
+    
 }
 
-#searchbar
+.searchbar
 {
     font-size: 18px;
+    border-radius: 0px;
 }
 
-#filters-container
+.locbutton, .searchbutton
 {
-    width: 914px;
-    height: 40px;
-    display: flex;
+    height: 30px;
 }
 
-#filters-container h2
+.searchbutton
 {
-    align-self: center;
-    font-size: 18px;
-    padding-left: 15px;
+    margin-left: -4.5px;
 }
 
-#filters
+.locbutton
 {
-    display: flex;
-    justify-content: space-between;
-    width: 600px;
-    padding-left: 40px;
+    border-radius: 0px;
+    border-radius: 15px 0px 0px 15px; 
 }
 
-.title-info p
+.searchbar
 {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    padding-left: 65px;
-
-}
-
+    height:22px;
+    margin-left: -5px;
+    margin-top: 1px;
+    display:inline-block;
 }
