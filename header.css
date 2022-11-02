@@ -47,8 +47,8 @@ padding-top: 15px;
 
 #logo
 {
-    width: 120px;
-    height: 40px;
+    width: 61px;
+    height: 19px;
     left: 0px;
     top: 0px;
 }
@@ -72,7 +72,6 @@ padding-top: 15px;
 
 .searchform
 {
-    border: none;
     font-size: 100%;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -85,7 +84,7 @@ padding-top: 15px;
 
 .searchbutton
 {
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .searchbutton-mob
@@ -98,23 +97,30 @@ padding-top: 15px;
 .searchbar
 {
     font-size: 18px;
-    border-radius: 0px;
+    border-radius: 1px;
+    border-color: #F2F2F2;
 }
 
-.locbutton, .searchbutton
-{
-    height: 30px;
-}
 
 .searchbutton
 {
     margin-left: -4.5px;
+    color: #FFFF;
+    background-color: #0065fc;
+    border-color: #0065fc;
+    height: 40px;
+    border-style: none;
 }
 
 .locbutton
 {
     border-radius: 0px;
-    border-radius: 15px 0px 0px 15px; 
+    border-radius: 15px 0px 0px 15px;
+    height: 40px;
+    width: 40px;
+    background-color: #F2F2F2;
+    border-color: #F2F2F2;
+    border-style: none;
 }
 
 .searchbar
@@ -124,3 +130,88 @@ padding-top: 15px;
     margin-top: 1px;
     display:inline-block;
 }
+
+.filters-container
+{
+    width: 914px;
+    height: 40px;
+    display: flex;
+}
+
+.filters-container h2
+{
+    align-self: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.filters
+{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    padding-left: 40px;
+}
+
+.filters-container .filters .disabled-filter
+{
+    border-radius: 25px;
+    border: solid;
+    border-color: #f2f2f2;
+    background-color: #FFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    transition-duration: 75ms;
+}
+
+.filters button:hover
+{
+    cursor: pointer;
+    background-color: #0065FC;
+}
+
+.filters span
+{
+    margin-left: 10px;
+    margin-right: 10px;;
+}
+
+.filters .fa
+{
+    margin-left: 10px;
+}
+
+.filters-container .filters .disabled-filter i
+{
+    color: #0065FC;
+}
+
+.title-info
+{
+    margin-top: 25px;
+    display: flex;
+}
+
+.title-info i
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: solid;
+    border-color: #f2f2f2;
+    background-color: #FFFF;
+    color: #0065FC;
+}
+
+.title-info p
+{
+    margin-left: 10px;
+}
+
+
+
