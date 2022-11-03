@@ -99,16 +99,19 @@ padding-top: 15px;
     font-size: 18px;
     border-radius: 1px;
     border-color: #F2F2F2;
+    border-style: solid;
+    border-width: 2px;
+    padding-bottom: 5px;
 }
 
 
 .searchbutton
 {
-    margin-left: -4.5px;
+    margin-left: -5px;
     color: #FFFF;
     background-color: #0065fc;
     border-color: #0065fc;
-    height: 40px;
+    height: 32px;
     border-style: none;
 }
 
@@ -116,7 +119,7 @@ padding-top: 15px;
 {
     border-radius: 0px;
     border-radius: 15px 0px 0px 15px;
-    height: 40px;
+    height: 32px;
     width: 40px;
     background-color: #F2F2F2;
     border-color: #F2F2F2;
@@ -166,12 +169,19 @@ padding-top: 15px;
     transition-duration: 75ms;
 }
 
-.filters button:hover
+/* Boutons filtres : transition en bleu clair au survol */
+.filters .disabled-filter:hover
 {
     cursor: pointer;
-    background-color: #0065FC;
+    box-shadow: inset 0 0 0 0 #F2F2F2;
+    transition: ease-in 0.3s;
+    outline: none;
+    background-color: #DEEBFF;
 }
 
+
+
+/* Taille des bouttons filtres */
 .filters span
 {
     margin-left: 10px;
@@ -183,10 +193,7 @@ padding-top: 15px;
     margin-left: 10px;
 }
 
-.filters-container .filters .disabled-filter i
-{
-    color: #0065FC;
-}
+
 
 .title-info
 {
@@ -194,18 +201,30 @@ padding-top: 15px;
     display: flex;
 }
 
-.title-info i
+.filters-container .filters .disabled-filter i
 {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+    color: #0065FC;
+}
+
+.title-info .fa
+{
+    width: 10px;
+    height: 15px;
     display: flex;
     align-items: center;
     text-align: center;
     border: solid;
+    border-width: 2px;
+    border-radius: 50%;
     border-color: #f2f2f2;
     background-color: #FFFF;
     color: #0065FC;
+}
+
+.title-info i
+{
+    font-size: 12px;
+    padding-left: 6px;
 }
 
 .title-info p
