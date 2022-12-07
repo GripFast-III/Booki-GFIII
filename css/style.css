@@ -105,7 +105,6 @@ body
 {
     display: none;
     border-radius: 0px 15px 15px 0px;
-    
 }
 
 .searchbar
@@ -117,7 +116,6 @@ body
     padding-bottom: 5px;
 }
 
-
 .searchbutton
 {
     margin-left: -5px;
@@ -126,6 +124,11 @@ body
     border-color: #0065fc;
     height: 32px;
     border-style: none;
+}
+
+.fa-magnifying-glass
+{
+    display: none;
 }
 
 .locbutton
@@ -149,7 +152,7 @@ body
 
 .filters-container
 {
-    width: 914px;
+    width: 100%;
     height: 40px;
     display: flex;
 }
@@ -165,7 +168,7 @@ body
 {
     display: flex;
     justify-content: space-between;
-    width: 600px;
+    width: 60%;
     padding-left: 40px;
 }
 
@@ -180,6 +183,8 @@ body
     align-items: center;
     font-weight: bold;
     transition-duration: 75ms;
+    height: 100%;
+    width: 100%;
 }
 
 /* Boutons filtres : transition en bleu clair au survol */
@@ -415,6 +420,12 @@ section
     justify-content: space-between;
     padding: 5%;
     flex:3;
+}
+
+.image-card-pop
+{
+    width: 100%;
+    flex: 1;
 }
 
 .populaires-photos
@@ -726,6 +737,11 @@ body
     border-style: none;
 }
 
+.fa-magnifying-glass
+{
+    display: none;
+}
+
 .locbutton
 {
     border-radius: 0px;
@@ -747,7 +763,7 @@ body
 
 .filters-container
 {
-    width: 914px;
+    width: 100%;
     height: 40px;
     display: flex;
 }
@@ -763,7 +779,7 @@ body
 {
     display: flex;
     justify-content: space-between;
-    width: 600px;
+    width: 100%;
     padding-left: 40px;
 }
 
@@ -778,6 +794,7 @@ body
     align-items: center;
     font-weight: bold;
     transition-duration: 75ms;
+    height: 100%;
 }
 
 /* Boutons filtres : transition en bleu clair au survol */
@@ -1037,6 +1054,12 @@ section
     flex:2;
 }
 
+.image-card-pop
+{
+    width: 100%;
+    flex: 1;
+}
+
 .card-pop
 {
     box-shadow: 1px 1px 5px -1px;
@@ -1223,10 +1246,17 @@ body
 
 .top
 {
-    display:grid;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
-    vertical-align: middle;
+    align-items: center;
+}
+
+.ancre
+{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .ancre .menu-list
@@ -1234,6 +1264,7 @@ body
     box-shadow: 0px -2px 0px 0px #F2F2F2 inset;
     -webkit-box-shadow: 0px -2px 0px 0px #F2F2F2 inset;
     -moz-box-shadow: 0px -2px 0px 0px #F2F2F2 inset;
+    width: 50%;
 }
 
 .ancre .menu-list.active
@@ -1254,7 +1285,7 @@ body
 {
     margin-left: 0px;
     display: inline-block;
-    text-align:center;
+    text-align: center;
 }
 
 .ancre .menu .menu-list a
@@ -1268,27 +1299,28 @@ body
 #logo
 {
     display: block;
-    width: 61px;
-    height: 19px;
-    margin-top: 2rem;
+    width: 60px;
+    margin-top: 25px;
 }
 
 .page-title h1
 {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 1rem;
-    width: 35%;
+    width: 69%;
 }
 
 .page-title p
 {
     font-size: 14px;
+    width: 100%
 }
 
 .page-title
 {
     margin-bottom: 20px;
+    margin-left: 5%;
 }
 
 .searchform
@@ -1296,6 +1328,7 @@ body
     font-size: 100%;
     padding-top: 10px;
     padding-bottom: 20px;
+    margin-left: 5%;
 }
     
 .searchform button:hover
@@ -1306,13 +1339,18 @@ body
 .searchbutton
 {
     border-radius: 0px 10px 10px 0px;
+    width: 40px;
+}
+
+.rechercher
+{
+    display: none;
 }
 
 .searchbutton-mob
 {
     display: none;
     border-radius: 0px 15px 15px 0px;
-    
 }
 
 .searchbar
@@ -1323,7 +1361,6 @@ body
     border-style: solid;
     padding-bottom: 5px;
 }
-
 
 .searchbutton
 {
@@ -1356,13 +1393,13 @@ body
 
 .filters-container
 {
-    width: 100%;
-    height: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
 }
 
 .filters-container h2
 {
-    align-self: center;
     font-size: 18px;
     font-weight: bold;
 }
@@ -1370,9 +1407,8 @@ body
 .filters
 {
     display: flex;
-    justify-content: space-between;
-    width: 600px;
-    padding-left: 40px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .filters-container .filters .disabled-filter
@@ -1382,10 +1418,11 @@ body
     border-color: #f2f2f2;
     background-color: #FFFF;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-weight: bold;
     transition-duration: 75ms;
+    height: 100%;
+    width: 100%
 }
 
 /* Boutons filtres : transition en bleu clair au survol */
@@ -1410,11 +1447,20 @@ body
     margin-left: 10px;
 }
 
+.bouton
+{
+    height: 2.5rem;
+    width: 48%;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
 .title-info
 {
     margin-top: 25px;
     margin-bottom: 25px;
     display: flex;
+    margin-left: 5%;
 }
 
 .filters-container .filters .disabled-filter i
@@ -1446,7 +1492,7 @@ body
 .title-info p
 {
     margin-left: 10px;
-    width: 40%;
+    width: 81%;
 }
 
 /* Partie Hébergement et Plus populaires */
