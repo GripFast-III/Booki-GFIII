@@ -533,22 +533,23 @@ section
 
 .card-act .text-container-act
 {
-    margin-top: -2px;
     font-weight: bold;
     color:black;
-    width: 100%;
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 2.5rem;
 }
 
-.card-act .titre-container-act
+.image-card-act
 {
-    margin-top: 15px;
-    margin-left: 15px;
+    display: flex;
+    flex: 2;
 }
 
 .card-act .activites-photos
 {
     width:100%;
-    height: 86%;
+    height: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
@@ -562,6 +563,8 @@ section
 .activites a
 {
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -1118,7 +1121,6 @@ section
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 25px;
-    gap: 15px;
 }
 
 .list-cards-activites
@@ -1126,13 +1128,13 @@ section
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    vertical-align: middle;
+    gap: 15px;
 }
 
 .card-act
 {
-    display: inline-block;
-    align-content: center;
+    display: flex;
+    justify-content: space-between;
     border-radius: 20px 20px 20px 20px;;
     box-shadow: 1px 1px 5px -1px
 }
@@ -1506,16 +1508,19 @@ section
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
+    width: 100%;
 }
 
 .section_offre
 {
-
+    width: 100%;
+    margin: 4.5%;
 }
 
 .section_pop
 {
     height: 100%;
+    width: 100%;
     background: #F2F2F2;
 }
 
@@ -1523,7 +1528,7 @@ section
 {
     display: flex;
     justify-content: space-between;
-    
+    width: 100%;
 }
 .titre-section h2
 {
@@ -1533,7 +1538,6 @@ section
     font-size: 22px;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 25px;
 }
 
 .section_offre .bottom_section /* --> Afficher Plus <-- */
@@ -1600,13 +1604,11 @@ section
 
 .card-marseille
 {
-    width: 100%;
-    border: 5px solid #FFFF;
-    border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 1px 5px -1px;
-    line-height: 1.15;
-    background-color: #FFFF;
-    margin: 1.5%;
+    border-radius: 20px 20px 20px 20px;
+    width: 100%;
+    margin: 4.5%;
+    border: 5px solid #FFFF;
 }
 
 .card-marseille:hover
@@ -1615,11 +1617,19 @@ section
     transition: 0.5s;
 }
 
+.image-card-marseille
+{
+    display: flex;
+    flex: 2;
+}
+
 .list-cards-hebergements
 {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     width: 100%;
+    align-items: center;
 }
 
 .card-marseille .link
@@ -1653,11 +1663,10 @@ section
 
 .list-cards-pop
 {
-    display: grid;
-    width: 90%;
-    height:80%;
+    display: flex;
     justify-content: space-between;
-    padding: 5%;
+    flex-direction: column;
+    width: 100%;
 }
 
 .populaires-photos
@@ -1683,15 +1692,21 @@ section
     border-radius: 0px 20px 20px 0px;
     text-decoration: none;
     line-height: 25px;
-    flex:2;
+    flex: 1.2;
+}
+
+.image-card-pop
+{
+    display: flex;
+    flex: 1;
+    height: 9rem;
 }
 
 .card-pop
 {
     box-shadow: 1px 1px 5px -1px;
     border-radius: 20px 20px 20px 20px;
-    width:100%;
-    margin-bottom: 5%;
+    margin: 4.5%;
 }
 
 .card-pop:hover
@@ -1725,7 +1740,8 @@ section
 
 .section_pop h4
 {
-    font-weight: bold;
+    font-weight: bolder;
+    width: 85%;
 }
 
 /* Activités */
@@ -1733,36 +1749,34 @@ section
 {
     font-family: 'Raleway';
     padding-bottom: 50px;
+    margin: 4.5%;
 }
 
 .titre-section-act
 {
-    margin-bottom: 1%;
-    width: 20%;
-    font-style: bold;
+    width: 40%;
+    font-style: bolder;
     font-weight: 700;
     font-size: 22px;
-    padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 25px;
-    gap: 15px;
 }
 
 .list-cards-activites
 {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
-    vertical-align: middle;
+    width: 100%;
+    align-items: center;
 }
 
 .card-act
 {
-    display: inline-block;
-    align-content: center;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 1px 5px -1px;
     margin-bottom: 10%;
+    width: 100%
 }
 
 .card-act .text-container-act
@@ -1782,6 +1796,7 @@ section
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
+    height: 11rem;
 }
 
 .card-act:hover
@@ -1812,7 +1827,7 @@ footer section
 body footer ul
 {
     list-style-type: none;
-    padding-left: 100px;
+    padding-left: 10%;
 }
 
 body footer a
