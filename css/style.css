@@ -273,7 +273,7 @@ section
 
 .section_pop
 {
-    height: 626px;
+    height: 100%;
     border-radius: 20px;
     background: #F2F2F2;
     flex: 2;
@@ -407,19 +407,19 @@ section
 .fa-chart-line
 {
     color:#0065FC;
-    margin-top: 10.5%;
+    margin-top: 39px;
     margin-right: 7%;
 }
 
 .list-cards-pop
 {
-    display: grid;
+    display: flex;
     flex-wrap: wrap;
-    width: 90%;
-    height:80%;
+    flex-direction: column;
+    height: 100%;
     justify-content: space-between;
     padding: 5%;
-    flex:3;
+    flex: 3;
 }
 
 .image-card-pop
@@ -437,7 +437,7 @@ section
     background-color: #FFFF;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
-    flex:1;
+    flex: 1;
 }
 
 .text-container-pop
@@ -459,7 +459,7 @@ section
 {
     box-shadow: 1px 1px 5px -1px;
     border-radius: 20px 20px 20px 20px;
-    width:100%;
+    width: 100%;
     margin-bottom: 5%;
 }
 
@@ -548,7 +548,7 @@ section
 
 .card-act .activites-photos
 {
-    width:100%;
+    width: 100%;
     height: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -565,6 +565,7 @@ section
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 
@@ -1018,7 +1019,7 @@ section
 .fa-chart-line
 {
     color:#0065FC;
-    margin-top: 3.5%;
+    margin-top: 39px;
     margin-right: 7%;
 }
 
@@ -1067,7 +1068,7 @@ section
 {
     box-shadow: 1px 1px 5px -1px;
     border-radius: 20px 20px 20px 20px;
-    width:100%;
+    width: 100%;
     margin: 1%;
 }
 
@@ -1136,7 +1137,8 @@ section
     display: flex;
     justify-content: space-between;
     border-radius: 20px 20px 20px 20px;;
-    box-shadow: 1px 1px 5px -1px
+    box-shadow: 1px 1px 5px -1px;
+    width: 100%;
 }
 
 .card-act .text-container-act
@@ -1156,7 +1158,7 @@ section
 
 .card-act .activites-photos
 {
-    width:12rem;
+    width: 100%;
     height: 15rem;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -1171,6 +1173,7 @@ section
 .activites a
 {
     text-decoration: none;
+    width: 100%;
 }
 
 
@@ -1657,7 +1660,7 @@ section
 .fa-chart-line
 {
     color:#0065FC;
-    margin-top: 5%;
+    margin-top: 39px;
     margin-right: 7%;
 }
 
