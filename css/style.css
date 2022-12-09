@@ -61,7 +61,7 @@ body
 
 #logo
 {
-    display:block;
+    display: block;
     width: 61px;
     height: 19px;
     margin-top: 2rem;
@@ -99,6 +99,12 @@ body
 .searchbutton
 {
     border-radius: 0px 10px 10px 0px;
+    margin-left: -5px;
+    color: #FFFF;
+    background-color: #0065fc;
+    border-color: #0065fc;
+    height: 32px;
+    border-style: none;
 }
 
 .searchbutton-mob
@@ -114,16 +120,10 @@ body
     border-color: #F2F2F2;
     border-style: solid;
     padding-bottom: 5px;
-}
-
-.searchbutton
-{
+    height: 22px;
     margin-left: -5px;
-    color: #FFFF;
-    background-color: #0065fc;
-    border-color: #0065fc;
-    height: 32px;
-    border-style: none;
+    margin-top: 1px;
+    display: inline-block;
 }
 
 .fa-magnifying-glass
@@ -140,14 +140,6 @@ body
     background-color: #F2F2F2;
     border-color: #F2F2F2;
     border-style: none;
-}
-
-.searchbar
-{
-    height:22px;
-    margin-left: -5px;
-    margin-top: 1px;
-    display:inline-block;
 }
 
 .filters-container
@@ -248,7 +240,7 @@ body
 }
 
 /* Partie Hébergement et Plus populaires */
-section
+section /* Partie qui sépare Hébergements + plus populaires et Activités à Marseille */
 {
     padding-top: 50px;
 }
@@ -293,7 +285,7 @@ section
     font-size: 22px;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 25px;
+    padding-left: 15px;
 }
 
 .section_offre .bottom_section /* --> Afficher Plus <-- */
@@ -452,7 +444,7 @@ section
     border-radius: 0px 20px 20px 0px;
     text-decoration: none;
     line-height: 25px;
-    flex:2;
+    flex: 2;
 }
 
 .card-pop
@@ -572,7 +564,7 @@ section
 /* Footer */
 footer
 {
-    display:flex;
+    display: flex;
     background-color: #f2f2f2;
     justify-content: center;
 }
@@ -602,8 +594,6 @@ body footer a
 
 body footer
 {
-    list-style-type: none;
-    display: flex;
     padding-bottom: 5%;
 }
 
@@ -674,7 +664,7 @@ body
 
 #logo
 {
-    display:block;
+    display: block;
     width: 61px;
     height: 19px;
     margin-top: 2rem;
@@ -703,15 +693,16 @@ body
     padding-top: 10px;
     padding-bottom: 20px;
 }
-    
-.searchform button:hover
-{
-    cursor: pointer;
-}
 
 .searchbutton
 {
     border-radius: 0px 10px 10px 0px;
+    margin-left: -5px;
+    color: #FFFF;
+    background-color: #0065fc;
+    border-color: #0065fc;
+    height: 32px;
+    border-style: none;
 }
 
 .searchbutton-mob
@@ -728,17 +719,10 @@ body
     border-color: #F2F2F2;
     border-style: solid;
     padding-bottom: 5px;
-}
-
-
-.searchbutton
-{
+    height: 22px;
     margin-left: -5px;
-    color: #FFFF;
-    background-color: #0065fc;
-    border-color: #0065fc;
-    height: 32px;
-    border-style: none;
+    margin-top: 1px;
+    display: inline-block;
 }
 
 .fa-magnifying-glass
@@ -755,14 +739,6 @@ body
     background-color: #F2F2F2;
     border-color: #F2F2F2;
     border-style: none;
-}
-
-.searchbar
-{
-    height:22px;
-    margin-left: -5px;
-    margin-top: 1px;
-    display:inline-block;
 }
 
 .filters-container
@@ -799,6 +775,7 @@ body
     font-weight: bold;
     transition-duration: 75ms;
     height: 100%;
+    width: 100%;
 }
 
 /* Boutons filtres : transition en bleu clair au survol */
@@ -904,7 +881,7 @@ section
     font-size: 22px;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 25px;
+    padding-left: 15px;
 }
 
 .section_offre .bottom_section /* --> Afficher Plus <-- */
@@ -971,7 +948,6 @@ section
 .card-marseille
 {
     width: 28%;
-    height: 18%;
     border: 5px solid #FFFF;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 1px 5px -1px;
@@ -1028,7 +1004,7 @@ section
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    margin:auto;
+    margin: auto;
 }
 
 .populaires-photos
@@ -1040,7 +1016,7 @@ section
     background-color: #FFFF;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
-    flex:1;
+    flex: 1;
 }
 
 .text-container-pop
@@ -1055,7 +1031,7 @@ section
     border-radius: 0px 20px 20px 0px;
     text-decoration: none;
     line-height: 25px;
-    flex:2;
+    flex: 2;
 }
 
 .image-card-pop
@@ -1116,7 +1092,6 @@ section
 .titre-section-act
 {
     margin-bottom: 1%;
-    font-family: 'Raleway';
     font-weight: 700;
     font-size: 22px;
     padding-top: 15px;
@@ -1180,7 +1155,7 @@ section
 /* Footer */
 footer
 {
-    display:flex;
+    display: flex;
     background-color: #f2f2f2;
     justify-content: center;
 }
@@ -1210,8 +1185,6 @@ body footer a
 
 body footer
 {
-    list-style-type: none;
-    display: flex;
     padding-bottom: 5%;
 }
 
@@ -1304,22 +1277,22 @@ body
 #logo
 {
     display: block;
-    width: 60px;
-    margin-top: 25px;
+    width: 61px;
+    height: 19px;
+    margin-top: 2rem;
 }
 
 .page-title h1
 {
     font-size: 18px;
-    font-weight: bolder;
-    margin-bottom: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
     width: 69%;
 }
 
 .page-title p
 {
     font-size: 14px;
-    width: 100%
 }
 
 .page-title
@@ -1335,15 +1308,20 @@ body
     padding-bottom: 20px;
     margin-left: 5%;
 }
-    
-.searchform button:hover
-{
-    cursor: pointer;
-}
 
 .searchbutton
 {
     border-radius: 0px 10px 10px 0px;
+    margin-left: -5px;
+    color: #FFFF;
+    background-color: #0065fc;
+    border-color: #0065fc;
+    height: 32px;
+    border-style: none;
+}
+
+.searchbutton
+{
     width: 40px;
 }
 
@@ -1365,16 +1343,10 @@ body
     border-color: #F2F2F2;
     border-style: solid;
     padding-bottom: 5px;
-}
-
-.searchbutton
-{
+    height: 22px;
     margin-left: -5px;
-    color: #FFFF;
-    background-color: #0065fc;
-    border-color: #0065fc;
-    height: 32px;
-    border-style: none;
+    margin-top: 1px;
+    display: inline-block;
 }
 
 .locbutton
@@ -1386,14 +1358,6 @@ body
     background-color: #F2F2F2;
     border-color: #F2F2F2;
     border-style: none;
-}
-
-.searchbar
-{
-    height:22px;
-    margin-left: -5px;
-    margin-top: 1px;
-    display:inline-block;
 }
 
 .filters-container
@@ -1531,7 +1495,6 @@ section
 {
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 .titre-section h2
 {
@@ -1563,12 +1526,6 @@ section
 {
     display: none;
     color:black;
-}
-
-.afficher-plus:hover
-{
-    color:black;
-    text-decoration: underline;
 }
 
 .hebergements-photos
@@ -1680,7 +1637,7 @@ section
     background-color: #FFFF;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
-    flex:1;
+    flex: 1;
 }
 
 .text-container-pop
@@ -1743,7 +1700,7 @@ section
 
 .section_pop h4
 {
-    font-weight: bolder;
+    font-weight: bold;
     width: 85%;
 }
 
@@ -1776,6 +1733,8 @@ section
 
 .card-act
 {
+    display: flex;
+    justify-content: space-between;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 1px 5px -1px;
     margin-bottom: 10%;
@@ -1811,12 +1770,15 @@ section
 .activites a
 {
     text-decoration: none;
+    width: 100%;
 }
 
 
 /* Footer */
 footer
 {
+    display: flex;
+    flex-direction: column;
     background-color: #f2f2f2;
     padding-bottom: 5%;
 }
