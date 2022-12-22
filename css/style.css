@@ -1,5 +1,3 @@
-/* Définition des polices personnalisées */
-
 @font-face {
     font-family: 'Raleway';
     src: url('https://fonts.google.com/specimen/Raleway');
@@ -14,6 +12,7 @@ body {
     font-family: 'Raleway';
     width: 95%;
     margin: auto;
+    max-width: 1400px;
 }
 
 .top {
@@ -183,7 +182,6 @@ section {
 
 .titre-section h2 {
     font-family: 'Raleway';
-    font-style: bold;
     font-weight: 700;
     font-size: 22px;
     padding-top: 15px;
@@ -194,7 +192,6 @@ section {
 /* --> Afficher Plus <-- */
 .section_offre .bottom_section {
     font-family: 'Raleway';
-    font-style: bold;
     font-weight: 700;
     font-size: 18px;
     padding-bottom: 10px;
@@ -697,7 +694,7 @@ body footer a {
     }
 
     .ancre .menu .menu-list a {
-        color:#F2F2F2;
+        color:#000;
         text-decoration: none;
         padding: 2rem;
         display: block;
@@ -858,7 +855,6 @@ body footer a {
 
     .titre-section-act {
         width: 40%;
-        font-style: bolder;
         padding-left: 0px;
     }
 
